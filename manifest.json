@@ -1,23 +1,32 @@
 {
-    "name": "__MSG_name__",
-    "description": "__MSG_description__",
-    "author": "Tony Zhou",
-    "manifest_version": 2,
-    "version": "1",
-    "permissions": [
-        "tabs",
-        "https://phabricator.twitter.biz/*",
-        "https://phabricator-staging.twitter.biz/*"
-    ],
-    "options_page": "options.html",
-    "omnibox": {
-        "keyword": "cs"
-    },
-    "background": {
-        "scripts": [
-            "3rdparty/jquery-3.1.0.js",
-            "background.js"
-        ]
-    },
-    "default_locale": "en"
+  "name": "__MSG_name__",
+  "description": "__MSG_description__",
+  "author": "Tony Zhou",
+  "manifest_version": 2,
+  "version": "1",
+
+  "permissions": [
+    "tabs",
+    "https://phabricator.twitter.biz/*",
+    "https://phabricator-staging.twitter.biz/*"
+  ],
+
+  "options_page": "options.html",
+
+  "omnibox": {
+    "keyword": "cs"
+  },
+
+  "icons": {
+    "16": "twitter-128.png"
+  },
+
+  "background": {
+    "scripts": [
+      "3rdparty/jquery-3.1.0.js",
+      "background.js"
+    ]
+  },
+
+  "default_locale": "en"
 }
