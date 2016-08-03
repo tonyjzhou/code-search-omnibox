@@ -1,9 +1,9 @@
 var omnibox = chrome.omnibox;
-var rootUrl = "https://phabricator-staging.twitter.biz";
-//var rootUrl = "https://phabricator.twitter.biz";
+//var rootUrl = "https://phabricator-staging.twitter.biz";
+var rootUrl = "https://phabricator.twitter.biz";
 
 omnibox.onInputChanged.addListener(function (text, suggest) {
-    $.get(rootUrl + "/typeahead/class/PhabricatorSearchDatasource/?__ajax__=true&q=" + text,
+    $.get(rootUrl + "/typeahead/class/DiffusionSymbolDatasource/?__ajax__=true&q=" + text,
         function (data) {
             var payload = $.parseJSON(data.substring(data.indexOf('{')))['payload'];
             var suggestions = payload.map(
