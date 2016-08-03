@@ -1,11 +1,10 @@
 var omnibox = chrome.omnibox;
-//var rootUrl = "https://phabricator-staging.twitter.biz";
-var rootUrl = "https://phabricator.twitter.biz";
+var rootUrl = "https://phabricator-staging.twitter.biz";
+//var rootUrl = "https://phabricator.twitter.biz";
 
 omnibox.onInputChanged.addListener(function(text, suggest) {
-    $.get(rootUrl + "/typeahead/class/PhabricatorSearchDatasource/?__ajax__=true&q=" + text, //+ "&raw=mod&&__metablock__=15",
+    $.get(rootUrl + "/typeahead/class/PhabricatorSearchDatasource/?__ajax__=true&q=" + text, 
       function(data) {
-        console.error(JSON.stringify(data));
         var payload = $.parseJSON(data.substring(data.indexOf('{')))['payload'];
         var suggestions = payload.map(
           function(result) {
