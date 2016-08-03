@@ -29,7 +29,6 @@ omnibox.onInputChanged.addListener(function (text, suggest) {
             description: '<match>' + matchedWord + '</match> ' + type + ' <url>' + URI + "</url>"
           }
         });
-      alert(suggestions.length);
       suggest(suggestions);
     }).fail(function (error) {
       alert("Error: " + JSON.stringify(error));
