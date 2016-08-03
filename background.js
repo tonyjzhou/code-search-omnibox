@@ -10,9 +10,10 @@ omnibox.onInputChanged.addListener(function (text, suggest) {
                 function (result) {
                     var matchedWord = result[0];
                     var URI = result[1];
+                    var type = result[5];
                     return {
                         content: rootUrl + URI,
-                        description: matchedWord + ' ' + URI
+                        description: '<match>' + matchedWord + '</match> ' + type + ' <url>' + URI + "</url>"
                     }
                 });
             suggest(suggestions);
