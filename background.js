@@ -4,7 +4,8 @@ var rootUrl = "https://phabricator-staging.twitter.biz";
 //var rootUrl = "https://phabricator.twitter.biz";
 
 var typeaheadUrl = rootUrl + "/typeahead/class/DiffusionSymbolDatasource/?__ajax__=true&q=";
-var searchUrl = rootUrl + "/search/?query=";
+//var searchUrl = rootUrl + "/search/?query=";
+var searchUrl = rootUrl + "/diffusion/symbol/"
 
 function isValidUrl(value) {
   // Copyright (c) 2010-2013 Diego Perini, MIT licensed
