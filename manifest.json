@@ -5,7 +5,9 @@
     "manifest_version": 2,
     "version": "1",
     "permissions": [
-        "tabs"
+        "tabs",
+        "https://phabricator.twitter.biz/*",
+        "https://phabricator-staging.twitter.biz/*"
     ],
     "options_page": "options.html",
     "omnibox": {
@@ -13,6 +15,7 @@
     },
     "background": {
         "scripts": [
+            "3rdparty/jquery-3.1.0.js",
             "background.js"
         ]
     },
