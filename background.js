@@ -31,7 +31,7 @@ omnibox.onInputChanged.addListener(function (text, suggest) {
         });
       suggest(suggestions);
     }).fail(function (error) {
-      alert("Error: " + JSON.stringify(error));
+      console.log("Error: " + JSON.stringify(error));
     });
 });
 
