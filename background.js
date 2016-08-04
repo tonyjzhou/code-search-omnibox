@@ -3,7 +3,7 @@ var omnibox = chrome.omnibox;
 var rootUrl = "https://phabricator-staging.twitter.biz";
 //var rootUrl = "https://phabricator.twitter.biz";
 
-var typeaheadUrl = rootUrl + "/typeahead/class/DiffusionSymbolDatasource/?__ajax__=true&q=";
+var typeaheadUrl = rootUrl + "/typeahead/class/DiffusionSymbolByLanguageDatasource/?__ajax__=true&q=" + language + "&raw=";
 //var searchUrl = rootUrl + "/search/?query=";
 var searchUrl = rootUrl + "/diffusion/symbol/";
 var langParam = "/?lang=" + language;

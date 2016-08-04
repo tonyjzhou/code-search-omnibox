@@ -16,7 +16,13 @@
   },
 
   "icons": {
-    "16": "twitter-128.png"
+    "16": "Java.png",
+    "48": "Java.png",
+    "128": "Java.png"
+  },
+
+  "browser_action": {
+    "default_icon": "Java.png"
   },
 
   "background": {

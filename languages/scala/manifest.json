@@ -21,7 +21,13 @@
   },
 
   "icons": {
-    "16": "twitter-128.png"
+    "16": "Scala.png",
+    "48": "Scala.png",
+    "128": "Scala.png"
+  },
+
+  "browser_action": {
+    "default_icon": "Scala.png"
   },
 
   "background": {
