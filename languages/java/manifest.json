@@ -1,6 +1,6 @@
 {
-  "name": "__MSG_name__",
-  "description": "__MSG_description__",
+  "name": "Java Code Search",
+  "description": "Type-ahead omnibox search for all symbol-indexed repos in Phabricator",
   "author": "Tony Zhou",
   "manifest_version": 2,
   "version": "1",
