@@ -15,6 +15,11 @@
     "keyword": "css"
   },
 
+  "browser_action": {
+//    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
   "icons": {
     "16": "twitter-128.png"
   },
