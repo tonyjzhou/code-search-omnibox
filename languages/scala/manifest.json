@@ -11,10 +11,8 @@
     "https://phabricator-staging.twitter.biz/*"
   ],
 
-  "options_page": "options.html",
-
   "omnibox": {
-    "keyword": "cs"
+    "keyword": "css"
   },
 
   "icons": {
@@ -24,9 +22,8 @@
   "background": {
     "scripts": [
       "3rdparty/jquery-3.1.0.js",
+      "language.js",
       "background.js"
     ]
-  },
-
-  "default_locale": "en"
+  }
 }

@@ -5,7 +5,8 @@ var rootUrl = "https://phabricator-staging.twitter.biz";
 
 var typeaheadUrl = rootUrl + "/typeahead/class/DiffusionSymbolDatasource/?__ajax__=true&q=";
 //var searchUrl = rootUrl + "/search/?query=";
-var searchUrl = rootUrl + "/diffusion/symbol/"
+var searchUrl = rootUrl + "/diffusion/symbol/";
+var langParam = "/?lang=" + language;
 
 function isValidUrl(value) {
   // Copyright (c) 2010-2013 Diego Perini, MIT licensed
@@ -37,5 +38,5 @@ omnibox.onInputChanged.addListener(function (text, suggest) {
 });
 
 omnibox.onInputEntered.addListener(function (text) {
-  chrome.tabs.update({ url: isValidUrl(text) ? text : searchUrl + text });
+  chrome.tabs.update({ url: isValidUrl(text) ? text : searchUrl + text + langParam });
 });

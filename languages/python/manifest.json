@@ -1,0 +1,29 @@
+{
+  "name": "__MSG_name__",
+  "description": "__MSG_description__",
+  "author": "Tony Zhou",
+  "manifest_version": 2,
+  "version": "1",
+
+  "permissions": [
+    "tabs",
+    "https://phabricator.twitter.biz/*",
+    "https://phabricator-staging.twitter.biz/*"
+  ],
+
+  "omnibox": {
+    "keyword": "csp"
+  },
+
+  "icons": {
+    "16": "twitter-128.png"
+  },
+
+  "background": {
+    "scripts": [
+      "3rdparty/jquery-3.1.0.js",
+      "language.js",
+      "background.js"
+    ]
+  }
+}
