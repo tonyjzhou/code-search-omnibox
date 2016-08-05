@@ -3,13 +3,12 @@
 
 TODO 
 -----------
+# Enable Full text search
+# Regex
+# Content preview
 
 
-Contribute
+Contributors
 ------------
-
-
-
-Release with `git archive -o ../code-search-latest.zip HEAD *js *json *html  _locales`
-
-
+# Tony Zhou (tzhou@twitter.com)
+# Patrick Stover (pstover@twitter.com)
