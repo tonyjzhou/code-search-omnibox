@@ -67,6 +67,7 @@ $('#remote .typeahead').typeahead(null, {
   name: 'best-pictures',
   display: 'formatted',
   source: bestPictures,
+  limit: 50
 //  templates: {
 //    empty: [
 //      '<div class="empty-message">',

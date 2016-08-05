@@ -173,7 +173,7 @@ p + p {
   border-bottom: 1px solid #ccc;
 }
 
-#scrollable-dropdown-menu .tt-menu {
+#remote .tt-menu {
   max-height: 150px;
   overflow-y: auto;
 }
