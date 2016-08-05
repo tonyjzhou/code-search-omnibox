@@ -1,17 +1,22 @@
 {
-    "name": "Stackoverflow Popup Example",
-    "manifest_version": 2,
-    "version": "0.1",
-    "description": "Run process on page activated by click in extension popup",
-    "browser_action": {
-        "default_popup": "popup.html"
-    },
-//    "background": {
-//        "scripts": ["background.js"]
-//    },
-    "permissions": [
-        "tabs",
-        "https://phabricator.twitter.biz/*",
-        "https://phabricator-staging.twitter.biz/*"
-    ]
+  "name": "Twitter Code Search",
+  "description": "Twitter Code Search for all symbol-indexed repos in Phabricator",
+  "manifest_version": 2,
+  "version": "1",
+
+  "permissions": [
+    "https://phabricator.twitter.biz/*",
+    "https://phabricator-staging.twitter.biz/*"
+  ],
+
+  "browser_action": {
+    "default_icon": "search.png",
+    "default_popup": "popup.html"
+  },
+
+  "icons": {
+    "16": "search.png",
+    "48": "search.png",
+    "128": "search.png"
+  }
 }
