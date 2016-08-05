@@ -1,19 +1,30 @@
 <html>
 <head>
-  <script src="popup.js"></script>
-  <style type="text/css" media="screen">
-    body { min-width:250px; text-align: center; }
-
-  </style>
+  <link rel="stylesheet" href="3rdparty/css/examples.css">
 </head>
 <body>
-<input type="text" id="symbol-text" size="25" maxlength="255" value="">
-<select id="language">
-  <option value="all">All</option>
-  <option value="java">Java</option>
-  <option value="scala">Scala</option>
-  <option value="py">Python</option>
-</select>
-<button id='search-button'>Search</button>
+<div id="remote">
+  <input class="typeahead" id="symbol-text" type="text" placeholder="Enter search token">
+</div>
+<table>
+  <tr>
+    <td>
+      <!--<input type="text" id="symbol-text" size="25" maxlength="255" value="">-->
+      <select id="language" class="popup-select">
+        <option value="all">All</option>
+        <option value="java">Java</option>
+        <option value="scala">Scala</option>
+        <option value="py">Python</option>
+      </select>
+      <button id='search-button'>Search</button>
+    </td>
+  </tr>
+</table>
+<script src="3rdparty/jquery-3.1.0.js"></script>
+<script src="3rdparty/typeahead.bundle.js"></script>
+<script src="3rdparty/handlebars-v4.0.5.js"></script>
+
+<script src="popup.js"></script>
+
 </body>
 </html>
