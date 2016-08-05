@@ -3,12 +3,12 @@
 
 TODO 
 -----------
-# Enable Full text search
-# Regex
-# Content preview
+* Enable Full text search
+* Regex
+* Content preview
 
 
 Contributors
 ------------
-# Tony Zhou (tzhou@twitter.com)
-# Patrick Stover (pstover@twitter.com)
+* Tony Zhou (tzhou@twitter.com)
+* Patrick Stover (pstover@twitter.com)
